@@ -7,6 +7,8 @@ int exam2 = int.Parse(Console.ReadLine()!);
 Console.Write("Have you done the homework?(1)Yes (2)No:");
 int hüpoints = int.Parse(Console.ReadLine()!);
 
+Console.Write("Have you done the oral exam?(1)Yes (2)No:");
+int oralexam = int.Parse(Console.ReadLine()!);
 
 int Yes = 1;
 int No = 2;
@@ -16,7 +18,7 @@ int result;
 int all=0;
 int prozent = 100;
 int points;
-int hüpoints; 
+ 
 
 if (exam1 == 1)
 {
@@ -31,14 +33,15 @@ if (exam2 == 1)
      points2 = int.Parse(Console.ReadLine()!);
      all += 20;
 }
-if (hüpoints == 1)
+
+if (oralexam == 1)
 {
     Console.Write("How many points2 have you got?0-20");
-     points2 = int.Parse(Console.ReadLine()!);
+     oralexam = int.Parse(Console.ReadLine()!);
      all += 20;
 }
 
-points = points1 + points2+hüpoints;
+points = points1 + points2+hüpoints+oralexam;
 result= points/ all*prozent;
 
 if (result >= 89 )
